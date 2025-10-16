@@ -1,8 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace weblog.Areas.Admin
+namespace weblog.Areas.Admin.Controllers
 {
-    public class Role : Controller
+    [Area("Admin")]
+    public class DashboardController : Controller
     {
         public IActionResult Index()
         {
